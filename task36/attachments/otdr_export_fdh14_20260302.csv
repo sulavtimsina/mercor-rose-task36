@@ -7,9 +7,12 @@ FDH14-B,B,2,3.20,Splice,2.21,
 FDH14-B,B,3,4.05,Splice,0.09,
 FDH14-B,B,4,5.20,Splice,0.11,
 FDH14-B,B,5,5.60,Connector,0.52,-44.8
-FDH14-C,C,1,1.25,Splice,0.09,
-FDH14-C,C,2,3.40,Splice,0.11,
-FDH14-C,C,3,4.10,Connector,0.49,-45.6
+FDH14-C,C,1,1.40,Splice,0.09,
+FDH14-C,C,2,3.05,Splice,0.31,
+FDH14-C,C,3,4.60,Splice,0.09,
+FDH14-C,C,4,6.15,Splice,0.11,
+FDH14-C,C,5,7.70,Splice,0.09,
+FDH14-C,C,6,8.20,Connector,0.49,-45.6
 FDH14-D,D,1,2.10,Splice,0.09,
 FDH14-D,D,2,3.55,Splice,0.31,
 FDH14-D,D,3,4.35,Splice,0.09,

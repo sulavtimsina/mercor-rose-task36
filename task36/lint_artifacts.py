@@ -58,14 +58,26 @@ def text_of_xlsx(path):
     return "\n".join(chunks)
 
 
+def text_of_docx(path):
+    from docx import Document
+    d = Document(path)
+    chunks = [p.text for p in d.paragraphs]
+    for t in d.tables:
+        for row in t.rows:
+            chunks += [c.text for c in row.cells]
+    return "\n".join(chunks)
+
+
 def text_of(path):
     if path.endswith(".pdf"):
         return text_of_pdf(path)
     if path.endswith(".xlsx"):
         return text_of_xlsx(path)
+    if path.endswith(".docx"):
+        return text_of_docx(path)
     if path.endswith((".csv", ".txt")):
         return open(path, encoding="utf-8", errors="replace").read()
-    return ""          # PNG carries no extractable text; checked visually
+    return ""
 
 
 issues = []
