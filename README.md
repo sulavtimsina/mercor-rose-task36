@@ -83,7 +83,7 @@ Plain text: [`task36/prompt.txt`](task36/prompt.txt) — 3488 characters (limit 
 PON hub is a 4-to-6 hour manual job for a field engineer, and mis-localising a single degraded
 splice dispatches a splice crew to the wrong access point at roughly $1,800 per truck roll;
 automating this reconciliation removes that engineering time and prevents the wasted dispatch
-while three subscribers are already below the service threshold and accruing SLA credits.
+while four subscribers are already below the service threshold and accruing SLA credits.
 
 ---
 
