@@ -1,0 +1,21 @@
+Analyze the four attached plant records for fibre distribution hub FDH-14 on a Gigabit Passive Optical Network (GPON) access network and produce an optical fault remediation memo as plain text in your response. Conduct your analysis as of 2 March 2026.
+
+The attached files are ODN-FDH14-R3.pdf (as-built plant record: network schematic, segment record, and splice schedule), OSP-207_RevD_Optical_Loss_Budget.pdf (component loss values, acceptance thresholds, measurement tolerance, and the OTDR test method), otdr_export_fdh14_20260302.csv (optical time-domain reflectometer (OTDR) events for each distribution leg), and ONT_Power_Survey_FDH14.xlsx (drop lengths and measured received power for each optical network terminal (ONT)).
+
+Carry out the following analysis.
+
+Calculate, for every ONT in the readings file, the design end-to-end path loss from the optical line terminal (OLT) to that ONT. Build the path from the as-built record and price each element using the loss values in the standard. A complete path comprises the feeder segment, the 1:8 primary splitter at the FDH, the distribution leg serving that subscriber, the 1:4 splitter at the multiport service terminal (MST), the subscriber drop, and every fusion splice, mechanical splice, and mated connector pair on that path. Derive the design received power at each ONT from the commissioned OLT transmit power.
+
+Classify each ONT against the acceptance thresholds in the standard using its measured received power.
+
+Compute, for each ONT, the discrepancy between its measured path loss and its design path loss, and identify which ONTs exceed the measurement tolerance defined in the standard.
+
+Reconcile the OTDR events against the splice schedule to identify every plant component whose measured loss exceeds its design value. Report each such component by distribution leg, distance from the FDH, component type, measured loss, and design loss.
+
+Determine, for each group of affected subscribers, whether the excess loss sits in shared distribution plant or downstream of an MST, and state the evidence that establishes this.
+
+Rank the faults for remediation. Order by severity first, placing FAIL ahead of MARGINAL; then by the number of subscribers affected, in descending order; then by the lowest measured received power.
+
+Express every optical loss in decibels (dB) and every optical power in decibel-milliwatts (dBm), each to two decimal places. Drop lengths are recorded in metres and must be converted before being combined with per-kilometre attenuation.
+
+Structure the memo to these requirements. Use exactly four sections, with these headings, in this order and this wording: "1. FAULT SUMMARY", "2. PER-SUBSCRIBER OPTICAL BUDGET", "3. FAULT LOCALISATION", "4. REMEDIATION ORDER". Render section 2 as a pipe-delimited plain-text table whose columns are, in order: ONT ID | Design Loss (dB) | Design Rx (dBm) | Measured Rx (dBm) | Discrepancy (dB) | Classification. Render section 4 as a numbered list with one fault per line, each line beginning with a fault identifier of the form FLT-01, FLT-02, and so on in rank order. Use no bullet points and no bold or italic markup anywhere in the memo. Keep the memo under 900 words.

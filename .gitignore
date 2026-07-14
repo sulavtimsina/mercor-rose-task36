@@ -1,0 +1,6 @@
+# Mercor internal instructions dump — deliberately not published to GitHub.
+rose-instructions.txt
+
+__pycache__/
+*.pyc
+.DS_Store
